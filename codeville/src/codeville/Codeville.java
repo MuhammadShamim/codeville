@@ -10,6 +10,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import codeville.ui.utils.UIUtils;
 
 /**
  *
@@ -19,19 +22,23 @@ public class Codeville extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("ui/welcome/welcome.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("/codeville/ui/welcome/welcome.fxml"));        
+        UIUtils.setStage(stage, new Scene(root), StageStyle.UNDECORATED, false);
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println(
+            " _     _               _ _ _       _     \n" +
+            "| |   (_)             (_) | |     | |    \n" +
+            "| |__  _ ___ _ __ ___  _| | | __ _| |__  \n" +
+            "| '_ \\| / __| '_ ` _ \\| | | |/ _` | '_ \\ \n" +
+            "| |_) | \\__ \\ | | | | | | | | (_| | | | |\n" +
+            "|_.__/|_|___/_| |_| |_|_|_|_|\\__,_|_| |_|"
+        );
+
         launch(args);
     }
-    
 }
