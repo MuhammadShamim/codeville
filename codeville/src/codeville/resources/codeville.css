@@ -8,6 +8,48 @@ and open the template in the editor.
     Author     : star
 */
 
-.root {
-    -fx-background-color: #000066;
+* {
+    /*UI Background*/
+    -fx-primary-bg: #2f323b;
+    
+    /*UI Label*/
+    -fx-primary-fill : #F7F7F9;
+    
+    /*UI Version*/
+    -fx-version-fill : #fce2b4;
 }
+
+.root {
+    -fx-background-color: -fx-primary-bg;
+}
+
+.label {
+    -fx-text-fill: -fx-primary-fill;
+}
+
+.brand-version {
+    -fx-text-fill: -fx-version-fill;
+}
+
+/*.glyph-icon
+{
+    -fx-fill: -fx-primary-fill;
+}*/
+
+.cog {
+    -fx-text-fill: #f6a821;
+}
+/*.button{
+    -fx-text-fill: -fx-primary-fill;
+    -fx-background-color: -fx-primary-bg;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-font-size: 13pt;
+}*/
+
+/*.button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}*/

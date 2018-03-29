@@ -5,7 +5,6 @@
  */
 package codeville.ui.welcome;
 
-import codeville.ui.utils.UIUtils;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,6 +19,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import codeville.ui.utils.UIUtils;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 
 /**
  * FXML Controller class
@@ -30,6 +32,34 @@ public class WelcomeController implements Initializable {
 
     @FXML
     private Button btnMain;
+    @FXML
+    private Color x41;
+    @FXML
+    private Font x31;
+    @FXML
+    private Color x413;
+    @FXML
+    private Font x313;
+    @FXML
+    private Color x4131;
+    @FXML
+    private Font x3131;
+    @FXML
+    private Color x41311;
+    @FXML
+    private Font x31311;
+    @FXML
+    private Color x411;
+    @FXML
+    private Font x311;
+    @FXML
+    private Color x4;
+    @FXML
+    private Font x3;
+    @FXML
+    private Color x412;
+    @FXML
+    private Font x312;
 
     /**
      * Initializes the controller class.

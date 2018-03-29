@@ -23,7 +23,7 @@ public class UIUtils {
 
     public static void setStage(Stage stage, Scene scene, StageStyle style, boolean fullScreen) throws IOException {
         stage.setScene(scene);
-        stage.initStyle(style);        
+        stage.initStyle(style);
         stage.getIcons().add(new Image(BRAND_ICON_IMAGE_LOC));
         stage.setTitle(BRAND_NAME);
         if ( fullScreen ) {
